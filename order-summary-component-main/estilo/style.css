@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+
+:root{
+    /* Colors */
+    --color01: #e0e8ff;
+    --color02: #3829e0;
+    --color03: #f5f7ff;
+    --color04: #7280a7;
+    --color05: #1f2f56;
+
+    /* Fonts */
+    --font01:'Red Hat Display', sans-serif;
+}
+
+.click{
+    cursor: pointer;
+}
+
+body{
+    font-family: var(--font01);
+    background: url("../images/pattern-background-desktop.svg") no-repeat;
+}
+
+#card-cont{
+    position: relative;
+    margin: 10px auto;
+    padding: 30px;
+    max-width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 20px #00000027;
+    border-radius: 20px;
+}
+
+/* IMG */
+#img-cont{
+    margin: -30px -30px 0px -30px;
+}
+#img-cont img{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+
+/* Section Text */
+#text-cont{
+    margin: 25px 0;
+    text-align: center;
+}
+#text-cont h1{
+    color: var(--color05);
+}
+#text-cont p{
+    color: var(--color04);
+    line-height: 1.7em;
+}
+
+/* Block Container */
+#block-cont{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f6f8ff;
+    border-radius: 10px;
+}
+#img-price-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#img-price-cont #img{
+    display: flex;
+    margin-right: 20px;
+}
+#img-price-cont #price{
+    font-size: 10px;
+    flex-direction: column;
+} 
+#img-price-cont h2{
+    font-weight: bold;
+    color: var(--color05);
+    margin-bottom: 0;
+}
+#img-price-cont p{
+    margin-top: 0;
+    font-size: 1.5em;
+    color: var(--color04);
+}
+/* Change */
+#change{
+    font-size: .9em;
+    font-weight: bolder;
+    color: var(--color02);
+}
+/* Button */
+#button-cont{
+    margin-top: 25px;
+}
+#b-button{
+    border: none;
+    background-color: var(--color02);
+    color: white;
+    font-weight: bolder;
+    
+    box-shadow: 0px 10px 20px #3829e05b;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .5s background;
+}
+#b-button:hover{
+    background-color: #170c97;
+}
+
+/* Cancel Order */
+#cancel-cont p{
+    color: var(--color04);
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer{
+    color: var(--color04);
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: var(--color05);
+    font-weight: bold;
+}
+footer a:hover{
+    color: var(--color02);
+}
