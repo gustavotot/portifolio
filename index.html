@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +9,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main id="content">
-        <h1>Links para Portifólio</h1>
+    <header>
+        <h1>Websites Challenges</h1>
+        <nav id="nav-container">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">Sobre</a>
+            <a href="#" class="nav-item">Sites</a>
+        </nav>
+    </header>
 
-        <section id="links">
-            <!-- Card Component Main -->
-            <div class="block">
-                <span class="sticky">
-                    <a href="https://gustavotot.github.io/portifolio/card-component-main/" target="_blank">Card Component Main</a>
-                </span>
-                <div class="img-container">
-                        <img
-                        src="card-component-main/design/desktop-design.jpg" alt="">
-                        <img src="card-component-main/design/mobile-design.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <span><a href="https://gustavotot.github.io/portifolio/order-summary-component-main/" target="_blank">Order Summary Component Main</a></span>
+    <main>
+        <section id="home">
 
         </section>
 
+        <div id="sites">
+            <div id="text">
+                <h1>Sites</h1>
+                <p>Sites que eu fiz para testar minhas capacidades em HTML5 e CSS3</p>
+            </div>
+            <section id="card-container">
+                <article class="card">
+                    <div class="titulo">
+                        <h2>Card Component Main</h2>
+                    </div>
+                    <div class="img-container">
+                        <div class="img">
+                            <span><a href="https://gustavotot.github.io/portifolio/card-component-main/" target="_blank"></a></span>
+                            <img src="card-component-main/design/desktop-design.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <p>
+                            Acima esta ao desafio proposto, onde tive que ultilizar tecnicas em <strong>HTML5</strong> e <strong>CSS3</strong>.
+                        </p>
+                        <p>Pontos aprendidos:</p>
+                        <ul>
+                            <li>Utilizar <i>"container"</i> para organizar o projeto de forma mais eficaz</li>
+                            <li>Ultilizaççao de <strong>FlexBox</strong></li>
+
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="card">
+                        Teste
+                </article>
+                <article class="card">
+                        Teste
+                </article>
+                <article class="card">
+                        Teste
+                </article>
+            </section>
+        </div>
     </main>
 </body>
 </html>

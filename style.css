@@ -1,57 +1,166 @@
-body{
-    background-color: #222;
+@charset "UTF-8";
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
 }
-h1{
-    color: #ffffff;
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font01: 'Red Hat Display', sans-serif;
+    --font02: 'Dongle', sans-serif;
+
+    /* Colors */
+    --color01: #d8dbe2;
+    --color02: #a9bcd0;
+    --color03: #58a4b0;
+    --color04: #373f51;
+    --color05: #1b1b1e;
 }
 
-.block{
+/* Body */
+body{
+    font-family: var(--font02);
+    background-color: var(--color05);
+}
+/* Header */
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color05);
+    box-shadow: 2px 0px 10px var(--color03);
+    height: 60px;
+}
+    header > h1{
+        font-size: 3em;
+        margin: 5px;
+
+        color: white;
+    }
+    /* Nav */
+    header > #nav-container{
+        font-size: 2em;
+        margin: 0px 20px;
+    }
+    #nav-container .nav-item{
+        margin-right: 20px;
+        padding: 0px 20px;
+        border-radius: 30px;
+
+        background-color: var(--color05);
+        color: var(--color01);
+        text-decoration: none;
+    }
+
+
+/* DIV */
+/* Sites */
+#sites{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    height: 70vh;
+
+    color: var(--color01);
+}
+    #sites #text{
+        text-align: center;
+        line-height: 30px;
+    }
+        #text h1{
+            font-size: 3em;
+            margin: 0;
+        }
+        #text p{
+            font-size: 1.3em;
+            margin: 0;
+        }
+/* SECTION */
+
+/* Card Container */
+#card-container{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     margin: 10px;
 }
-.sticky{
-    position: sticky;
-    top: 10px;
-    z-index: 90;
-}
-span{
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
-}
-span a{
-    display: flex;
-    justify-content: center;
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    text-decoration:none ;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 50px;
-    box-shadow: 0px 0px 20px black;
-    padding: 10px;
-    color: #000000;
-    transition: .3s ease-out;
+        width: 250px;
+        /* height: 350px; */
+        padding: 12px;
+        
+        border-radius: 30px 0px;
+        box-shadow: 1px 1px 10px var(--color05);
+        color: var(--color04);
+        background: var(--color01)
+        
+    }
+    .titulo{
+        text-align: center;
+    }
+    .img-container{
+        position: relative;
+    }
+    .img-container img{
+        width: 100%;
+        border-radius: 10px 0px;
+        outline: 2px solid var(--color03);
+    }
+        span a{
+            position: absolute;
+            width: 100%;
+            height: 158px;
+            border-radius: 10px 0px;
+            background-color: #58a4b0;
+            opacity: 0;
+            z-index: 99;
+            transition: .5s opacity;
+        }
+        span a:hover{
+            opacity: .5;
+        }
+
+/* Info */
+.info-container{
+    line-height: 1em;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
-span a:hover{
-    background-color: #222;
-    color: #ffffff;
-    box-shadow: 0px 0px 10px aqua;
-}
-.img-container{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    padding: 10px;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-.img-container img{
-    width: 100%;
-    margin-bottom: 10px;
-}
+    .info-container p{
+        text-align: left;
+        text-indent: 25px;
+    }
+        .info-container p:nth-child(1){
+            text-align: center;
+            font-size: 1.2em;
+            border-bottom: 1px solid var(--color05);
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        .info-container p:nth-child(2){
+            font-size: 1.2em;
+            text-indent: 0;
+            font-weight: bolder;
+        }
+
+    .info-container ul{
+        margin-top: 10px;
+        list-style: inside;
+    }
+    .info-container strong{
+        color: var(--color05);
+    }
