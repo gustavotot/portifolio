@@ -10,8 +10,6 @@
     padding: 0;
 }
 :root{
-    margin: 0;
-    padding: 0;
     --font01: 'Red Hat Display', sans-serif;
     --font02: 'Dongle', sans-serif;
 
@@ -26,28 +24,31 @@
 /* Body */
 body{
     font-family: var(--font02);
-    background-color: var(--color05);
+    background-color: rgb(27, 27, 30,.98)
 }
 /* Header */
 header{
     display: flex;
-    position: sticky;
-    z-index: 99;
+    z-index: 80;
     top: 0;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--color05);
-    box-shadow: 2px 0px 10px var(--color03);
 }
-    header > h1{
-        font-size: 3em;
-        margin: 5px;
-
+    .flut{
+        position: sticky;
+        top: 0;
+        font-size: 2em;
+        z-index: 99;
         color: white;
+        text-align: center;
+        background-color: #1b1b1ecb;
+        ;
     }
     /* Nav */
     header > #nav-container{
-        font-size: 2em;
+        display: flex;
+        font-size: 1.5em;
         margin: 0px 20px;
     }
     #nav-container .nav-item{
@@ -58,6 +59,10 @@ header{
         background-color: var(--color05);
         color: var(--color01);
         text-decoration: none;
+        transition: .3s background;
+    }
+    #nav-container .nav-item:hover{
+        background-color: var(--color04);
     }
 
 
@@ -68,7 +73,7 @@ header{
     flex-direction: column;
     margin: 20px;
     padding: 10px;
-
+    z-index: 80;
     color: var(--color01);
 }
     #sites #text{
@@ -90,7 +95,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     margin: 10px;
 }
     .card{
@@ -99,7 +103,6 @@ header{
         align-items: center;
 
         width: 250px;
-        /* height: 350px; */
         padding: 12px;
         margin: 10px;
         
@@ -111,26 +114,29 @@ header{
     .titulo{
         text-align: center;
         font-size: 1.2em;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
-    }
-    .img-container{
-        position: relative;
-    }
-    .img-container img{
         width: 100%;
-        border-radius: 20px 0px;
-        outline: 2px solid var(--color05);
+        border-radius: 0px 0px 20px 20px;
+        margin-top: -10px;
+        
+        
+        color: var(--color01);
+        background-color: var(--color04);
     }
+    .img{
+        margin: 5px;
+    }
+     .img-container img{
+        overflow: 1px solid red;
+        width: 100%;
+    } 
+    
         span a{
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 94%;
-            border-radius: 20px 0px;
+            height: 62%;
+            border-radius: 20px 0px 0px 0px;
             background-color: aqua;
             opacity: 0;
-            z-index: 98;
+            z-index: 15;
             transition: .5s opacity;
         }
         span a:hover{
