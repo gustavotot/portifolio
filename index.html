@@ -1,98 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links</title>
-
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 650px)" href="css/mobile.css">
+    <title>Portifólio</title>
 </head>
 <body>
-    <h1 class="flut">Websites Challenges</h1>
-    <header>
-        
-        <nav id="nav-container">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#" class="nav-item">Sobre</a>
-            <a href="#" class="nav-item">Sites</a>
+    <!-- Cabeçalho -->
+    <header id="cabecalho">
+        <h1>Websites</h1>
+
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
         </nav>
-        
     </header>
 
     <main>
-        <div id="sites">
-            <div id="text">
-                <h1>Sites</h1>
-                <p>Sites que eu fiz para testar minhas capacidades em HTML5 e CSS3</p>
-            </div>
-            <section id="card-container">
-                <!-- Card 01 -->
-                <article class="card">
-                    
+        
+        <!-- Container Cards -->
+        <section id="card-container">
+            
+            <!-- Card 01 -->
+            <section class="card">
+                
+                <!-- Img container -->
+                <picture class="img-container">
+                    <img src="card-component-main/design/desktop-design.jpg" alt="">
+                </picture>
 
-                    <div class="img-container">
-                        
-                        
-                        <img src="card-component-main/design/desktop-design.jpg" alt="">
-
-                        <div class="titulo">
-                            <h2>Card Component Main</h2>
-                        </div>
-                        
+                <!-- Conteudo -->
+                <div class="info-container">
+                    <!-- Titulo -->
+                    <div class="titulo">
+                    <h2>Card Component Main</h2>
                     </div>
-                    
-
-                    <div class="info-container">
-                        <p>
-                            Acima esta ao desafio proposto, onde tive que ultilizar tecnicas em <strong>HTML5</strong> e <strong>CSS3</strong>.
-                        </p>
-                        <p>Pontos aprendidos:</p>
-                        <ul>
-                            <li>Utilizar <i>"container"</i> para organizar o projeto de forma mais eficaz</li>
-                            <li>Ultilizaççao de <strong>FlexBox</strong></li>
-                            <li>Colocar icones, ainda nao tinha feito... nao foi tao complicado, mas foi desafiador.</li>
-
-                        </ul>
+                    <!-- Description -->
+                    <div class="description">
+                        <p>                            Acima esta ao desafio proposto, onde tive que ultilizar tecnicas em <strong>HTML5</strong> e <strong>CSS3</strong>.</p>
                     </div>
 
-                </article>
+                    <a href="https://gustavotot.github.io/portifolio/card-component-main/" target="_blank"><button class="button">
+                        Vizualizar
+                    </button></a>
 
-                <!-- Card 02 -->
-                <article class="card">
-                    <div class="img-container">
-                            <span><a href="https://gustavotot.github.io/portifolio/order-summary-component-main/" target="_blank"></a></span>
-                            <img src="order-summary-component-main/design/desktop-design.jpg" alt="">
-                            <div class="titulo">
-                                <h2>Order Summary Component Main</h2>
-                            </div>
-                    </div>
-
-                    
-
-                    <div class="info-container">
-                        <p>
-                            Esse desafio tem o mesmo principio do primeiro, porem minha dificuldade foi com a imagem.
-                        </p>
-                        <p>Pontos aprendidos:</p>
-                        <ul>
-                            <li>Alinhar a <strong>imagem</strong> no cabeçalho do card, isso foi um desafio, mas resolvi de forma simples.</li>
-                            <li>O <strong>botao</strong> foi bem divertido editar.</li>
-                            <li>Arredondar as bordas</li>
-
-                        </ul>
-                    </div>
-                    
-                </article>
+                    <p>Pontos aprendidos:</p>
+                    <ul class="list">
+                        <li>Utilizar <i>"container"</i> para organizar o projeto de forma mais eficaz</li>
+                        <li>Ultilização de <strong>FlexBox</strong></li>
+                        <li>Colocar icones, ainda não tinha feito... não foi tão complicado, mas foi desafiador.</li>
+                    </ul>
+                </div>
 
             </section>
-        </div>
-    </main>
+            <!-- Card 02 -->
+            <section class="card">
+                
+            </section>
 
-    <footer>
-        <p>Site desenvolvido por <a href="https://github.com/gustavotot" target="_blank">Gustavo Tot</a></p>
-    </footer>
-   
+        </section>
+
+
+    </main>
 </body>
 </html>

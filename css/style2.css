@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font01: 'Red Hat Display', sans-serif;
+    --font02: 'Dongle', sans-serif;
+
+    /* Colors */
+    --color01: #d8dbe2;
+    --color02: #a9bcd0;
+    --color03: #58a4b0;
+    --color04: #373f51;
+    --color05: #1b1b1e;
+}
+
+/* Body */
+body{
+    font-family: var(--font02);
+    background-color: rgb(27, 27, 30,.98)
+}
+/* Header */
+header{
+    display: flex;
+    z-index: 80;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color05);
+}
+    .flut{
+        position: sticky;
+        top: 0;
+        font-size: 2em;
+        z-index: 99;
+        color: white;
+        text-align: center;
+        background-color: #1b1b1ecb;
+        ;
+    }
+    /* Nav */
+    header > #nav-container{
+        display: flex;
+        font-size: 1.5em;
+        margin: 0px 20px;
+    }
+    #nav-container .nav-item{
+        margin-right: 20px;
+        padding: 0px 20px;
+        border-radius: 30px;
+
+        background-color: var(--color05);
+        color: var(--color01);
+        text-decoration: none;
+        transition: .3s background;
+    }
+    #nav-container .nav-item:hover{
+        background-color: var(--color04);
+    }
+
+
+/* DIV */
+/* Sites */
+#sites{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    z-index: 80;
+    color: var(--color01);
+}
+    #sites #text{
+        text-align: center;
+        line-height: 30px;
+    }
+        #text h1{
+            font-size: 3em;
+            margin: 0;
+        }
+        #text p{
+            font-size: 1.3em;
+            margin: 0;
+        }
+/* SECTION */
+
+/* Card Container */
+#card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 250px;
+        padding: 12px;
+        margin: 10px;
+        
+        border-radius: 30px 0px;
+        color: var(--color04);
+        background: var(--color01)
+        
+    }
+    .titulo{
+        text-align: center;
+        font-size: 1.2em;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        margin-top: -10px;
+        
+        
+        color: var(--color01);
+        background-color: var(--color04);
+    }
+    
+    .img-container{
+        height: 150px;
+        margin: 10px;
+    }
+    div.img{
+        background-image: url("../card-component-main/design/desktop-design.jpg");
+        background-size: cover;
+        background-position: center center;
+
+        width: 100%;
+        height: 100%;
+        background-color: #58a4b0;
+    }
+    
+    .img-container a{
+        width: 100px;
+        height: 100px;
+        background-color: #373f51;
+        z-index: 99;
+    }
+    
+    
+/* Info */
+.info-container{
+    line-height: 1em;
+    font-size: 1.2em;
+}
+    .info-container p{
+        text-align: left;
+        text-indent: 25px;
+    }
+        .info-container p:nth-child(1){
+            text-align: center;
+            font-size: 1.2em;
+            border-bottom: 1px solid var(--color05);
+            margin-bottom: 10px;
+            padding: 5px;
+
+            color: var(--color04);
+        }
+        .info-container p:nth-child(2){
+            font-size: 1.2em;
+            text-indent: 0;
+            font-weight: bolder;
+        }
+
+    .info-container ul{
+        margin-top: 10px;
+        list-style: inside;
+    }
+    .info-container strong{
+        color: var(--color05);
+    }
+
+/* FOOTER */
+footer{
+    background-color: var(--color01);
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color05);
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
