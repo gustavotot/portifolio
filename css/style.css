@@ -19,6 +19,11 @@
     margin: 0;
     padding: 0;
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Body */
 body{
     color: var(--color03);
@@ -29,11 +34,11 @@ body{
 /* Header */
 header{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
     padding: 10px;
-    height: 30px;
 
     background-color: var(--color05);
 }
@@ -57,14 +62,42 @@ section#card-container{
 
     margin: 10px;
 }
-/* Section */
+/* Sobre */
+#sobre{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+
+    color: var(--color01);
+    background-color: var(--color03);
+}
+#sobre p{
+    margin: 20px 0px;
+}
+#sobre legend{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+
+    text-align: center;
+    background-color: var(--color03);
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: .3em;
+
+    padding: 5px;
+    border-radius: 20px;
+    border: 3px solid var(--color01);
+}
+/* Card */
 section.card{
     display: flex;
     flex-direction: column;
     justify-content: start;
 
-    width: 250px;
-    margin: 10px;
+    width: 300px;
+    margin: 50px 10px;
     padding: 20px;
     border-radius: 10px 10px 80px 10px;
 
@@ -74,6 +107,7 @@ section.card{
 }
     /* Imagem */
     picture img{
+
         width: 100%;
         border-radius: 10px;
         border: 2px solid var(--color05);
@@ -81,8 +115,6 @@ section.card{
    
 
 /* Info */
-.info-container{
-}
     /* Titulo */
     .titulo{
         margin: 10px 0px;
@@ -92,7 +124,7 @@ section.card{
 
     /* BUTTON */
     .button{
-        margin: 10px 0px;
+        margin: 30px 0px;
         width: 100%;
         height: 50px;
         border-radius: 10px;
@@ -102,7 +134,7 @@ section.card{
         font-family: var(--font00);
         font-size: 1.2em;
 
-        box-shadow: 0px 0px 5px #0103265a;
+        box-shadow: 0px 0px 10px #965b0384;
         color: var(--color03);
         background-color: var(--color05);
     }
@@ -110,16 +142,81 @@ section.card{
         background-color: var(--color04);
     }
 
-    .info-container p{
-        margin-top: 10px;
-        
-    }
+    /* List */
     .list{
         list-style: inside;
         margin-top: 10px;
     }
+
+    /* Plus */
     strong{
         color: var(--color02);
     }
+
+/* CONTATO */
+#contato{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+
+    text-align: center;
+    padding: 10px;
+    
+    color: var(--color01);
+    background-color: var(--color03);
+}
+/* FIELDSET */
+
+    fieldset{
+        border: none;
+    }
+    /* Legend */
+    #contato legend{
+        background-color: var(--color03);
+        font-size: 1.2em;
+        text-align: center;
+        letter-spacing: .3em;
+
+        padding: 5px;
+        border-radius: 20px;
+        border: 3px solid var(--color01);
+    }
+
+    #i-cont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        font-family: var(--font00);
+    }
+    #i-cont div{
+        width: 15%;
+        display: flex;
+        justify-content: center;
+    }
+    #i-cont i{
+        font-size: 1.5em;
+    }
+    #i-cont a:hover{
+        color: var(--color04);
+    }
+
+/* Footer */
+footer{
+    padding: 2px;
+    text-align: center;
+    background-color: var(--color05);
+    font-size: .8em;
+}
+footer a{
+    color: var(--color01);
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
     
     

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 650px)" href="css/mobile.css">
+
     <title>Portifólio</title>
 </head>
 <body>
@@ -13,14 +16,20 @@
         <h1>Websites</h1>
 
         <nav>
-            <a href="">Inicio</a>
-            <a href="">Sobre</a>
-            <a href="">Contato</a>
+            <a href="#">Inicio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
     <main>
-        
+        <!-- Sobre -->
+        <fieldset id="sobre">
+            <legend>Sobre</legend>
+            <!-- <section id="sobre"> -->
+            <p>Abaixo estão websites que fiz para treinar habilidades e melhorar meu desempenho. Caso tenha curiosidade de conhecer algum projeto basta clicar no botão <strong>Visualizar</strong> </p>
+            <!-- </section> -->
+        </fieldset>
         <!-- Container Cards -->
         <section id="card-container">
             
@@ -43,7 +52,7 @@
                         <p>                            Acima esta ao desafio proposto, onde tive que ultilizar tecnicas em <strong>HTML5</strong> e <strong>CSS3</strong>.</p>
                     </div>
 
-                    <a href="https://gustavotot.github.io/portifolio/card-component-main/" target="_blank"><button class="button">
+                    <a href="card-component-main/index.html" target="_blank"><button class="button">
                         Vizualizar
                     </button></a>
 
@@ -56,14 +65,40 @@
                 </div>
 
             </section>
-            <!-- Card 02 -->
-            <section class="card">
-                
-            </section>
-
+           
         </section>
-
-
+        <!-- Contato -->
+        
+        <fieldset id="contato">
+            <legend>Contato</legend>
+                <div id="i-cont">
+                    <div id="github">
+                        <a href="https://github.com/gustavotot" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <p>GitHub</p>
+                        </a>
+                    </div>
+                    <div id="instagram">
+                        <a href="https://www.instagram.com/gustavo.tot/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                    <div id="instagram">
+                        <a href="https://wa.me/351933652941" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <p>Whatsapp</p>
+                        </a>
+                    </div>
+            
+                </div>
+        </fieldset>
     </main>
+    <footer>
+        Desenvolvido por <a href="https://github.com/gustavotot" target="_blank">Gustavo Tot</a>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/92f731b2f2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
