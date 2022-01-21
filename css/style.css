@@ -88,17 +88,18 @@ header{
 #card-container{
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
 
     margin: 50px 10px;
 }
 /* Card */
-section.card{
+.card{
     display: flex;
     flex-direction: column;
-    justify-content: start;
 
     width: 300px;
+    height: auto;
     margin: 10px;
     padding: 20px;
     border-radius: 10px 10px 80px 10px;
