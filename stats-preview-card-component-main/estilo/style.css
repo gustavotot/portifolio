@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+/* - Very dark blue (main background):  */
+/* - Dark desaturated blue (card background):  */
+/* - Soft violet (accent):  */
+/* - White (main heading, stats):  */
+/* - Slightly transparent white (main paragraph):  */
+/* - Slightly transparent white (stat headings):  */
+
+--color01: #090b1a;
+--color02: #1b1938;
+--color03: #aa5cdb;
+--color04: #ffffff;
+--color05: #ffffffbf;
+--color06: #ffffff99;
+
+--font01: 'Inter', sans-serif;
+--font02: 'Lexend Deca', sans-serif;
+
+}
+
+body{
+    font-family: var(--font02);
+    font-size: 15px;
+    min-height: 100vh;
+    background-color: var(--color01);
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1020px;
+    margin: 0px auto;
+}
+
+.wrapper{
+    background-color: var(--color02);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.img-component img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-component{
+    position: relative;
+}
+
+.img-component::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #450070;
+    opacity: .6;
+
+}
+
+.text-component{
+    padding: 13%;
+
+}
+
+.title{
+    color: var(--color04);
+    font-weight: 700;
+    padding-bottom: 22px;
+}
+.title span{
+    color: var(--color03);
+}
+.subtitle{
+    color: var(--color05);
+    line-height: 1.6;
+}
+
+.stat-box{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+.stat-box p.num{
+    color: var(--color04);
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.stat-box p{
+    color: var(--color06);
+}
+
+@media only screen and (max-width: 430px){
+
+    body{
+        text-align: center;
+    }
+
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .img-component{
+        order: -1;
+    }
+
+    .text-component{
+        padding: 12% 8%;
+    }
+
+    .title{
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    .stat-box{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .stat-box div{
+        margin-top: 20px;
+    }
+}
