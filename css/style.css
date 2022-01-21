@@ -54,17 +54,11 @@ header{
         text-decoration: none;
     }
 
-/* Section Container */
-section#card-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 
-    margin: 10px;
-}
 /* Sobre */
 #sobre{
-    position: relative;
+    position: sticky;
+    top: 0;
     text-align: center;
     padding: 10px;
 
@@ -90,6 +84,14 @@ section#card-container{
     border-radius: 20px;
     border: 3px solid var(--color01);
 }
+/* Section Container */
+#card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin: 50px 10px;
+}
 /* Card */
 section.card{
     display: flex;
@@ -97,7 +99,7 @@ section.card{
     justify-content: start;
 
     width: 300px;
-    margin: 50px 10px;
+    margin: 10px;
     padding: 20px;
     border-radius: 10px 10px 80px 10px;
 
@@ -117,9 +119,14 @@ section.card{
 /* Info */
     /* Titulo */
     .titulo{
+        text-align: center;
         margin: 10px 0px;
         color: var(--color05);
         font-size: 1em;
+    }
+    /* Description */
+    .description{
+        text-align: center;
     }
 
     /* BUTTON */
@@ -146,6 +153,14 @@ section.card{
     .list{
         list-style: inside;
         margin-top: 10px;
+        list-style: none;
+    }
+    .list li::before{
+        content: "• ";
+        color: var(--color05);
+    }
+    .list li{
+        text-indent: 1em;
     }
 
     /* Plus */
@@ -162,7 +177,6 @@ section.card{
 
     text-align: center;
     padding: 10px;
-    
     color: var(--color01);
     background-color: var(--color03);
 }
