@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color01: #e38826;
+    --color02: #006970;
+    --color03: #004241;
+    --color04: rgba(255, 255, 255, 0.749);
+    --color05: rgb(242, 242, 242);
+
+    --font01: 'Big Shoulders Display', cursive;
+    --font02: 'Lexend Deca', sans-serif;
+}
+
+body{
+    font-family: var(--font02);
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0% auto;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 3% 0;
+}
+
+.component{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 450px;
+    padding: 10%;
+}
+.component .title{
+    text-transform: uppercase;
+    font-family: var(--font01);
+    font-size: 2.5em;
+    color: var(--color05);
+    margin-top: -40%;
+}
+.component .description{
+    color: var(--color04);
+    font-size: .9em;
+    line-height: 1.4em;
+    margin-top: 10% ;
+}
+
+.component .button{
+
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    max-width: 70%;
+    padding: 15px;
+
+    font-weight: 700;
+    background-color: var(--color05);
+}
+.component:nth-child(1) .button:active{
+    background-color: rgba(0, 66, 65, 0);
+    border:   2px solid  white;
+    padding: 13px;
+    color: white;
+}
+.component:nth-child(2) .button:active{
+    background-color: rgba(0, 66, 65, 0);
+    border:   2px solid  white;
+    padding: 13px;
+    color: white;
+}
+.component:nth-child(3) .button:active{
+    background-color: rgba(0, 66, 65, 0);
+    border:   2px solid  white;
+    padding: 13px;
+    color: white;
+}
+.component:nth-child(1) .button{
+    color: var(--color01);
+}
+.component:nth-child(2) .button{
+    color: var(--color02);
+}
+.component:nth-child(3) .button{
+    color: var(--color03);
+}
+.component img{
+    width: 30%;
+}
+.component:nth-child(1){
+    background-color: var(--color01);
+}
+.component:nth-child(2){
+    background-color: var(--color02);
+}
+.component:nth-child(3){
+    background-color: var(--color03);
+}
+
+@media only screen and (max-width: 430px){
+    
+    
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
