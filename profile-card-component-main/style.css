@@ -136,7 +136,7 @@ img.profile{
 
 @media only screen and (max-width: 420px){
     
-    
+    .pat:nth-child(2){display: none;}
    .component{
        margin: 10px;
        width: 250px;
