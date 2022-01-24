@@ -41,12 +41,12 @@ body{
 .pat:nth-child(1){
     top: 0;
     left: 0;
-    transform: translate(-50%,-50%);
+    transform: translate(-55%,-55%);
 }
 .pat:nth-child(2){
     right: 0;
     bottom: 0;
-    transform: translate(50%,50%);
+    transform: translate(55%,55%);
 }
 
 
