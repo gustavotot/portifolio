@@ -137,6 +137,9 @@ img.profile{
 @media only screen and (max-width: 420px){
     
     .pat:nth-child(2){display: none;}
+    .pat:nth-child(1){
+        transform: translate(-30%,-10%);
+    }
    .component{
        margin: 10px;
        width: 250px;
