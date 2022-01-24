@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --color04: #969696;
+    --color03: #6a6f81;
+    --color02: #2d3248;
+    --color01: #19a2ae;
+
+    --font01: 'Kumbh Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font01);
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--color01);
+    overflow: hidden;
+    
+}
+
+.pat-component{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+}
+.pat{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.pat:nth-child(1){
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+.pat:nth-child(2){
+    right: 0;
+    bottom: 0;
+    transform: translate(50%,50%);
+}
+
+
+/* Container */
+.container{
+    margin: 0% auto;
+    max-width: 300px;
+    z-index: 10;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+
+    background-color: white;
+}
+
+/* Imagem */
+.img-component{
+    position: relative;
+    height: 150px;
+    background-color: #19a2ae;
+    text-align: center;
+}
+img.bg{
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+img.profile{
+    position: absolute;
+
+    bottom: -65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px white;
+}
+/* Text Component */
+.text-component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+
+    color: var(--color03);
+}
+.name-age{
+    display: flex;
+    align-items: baseline;
+}
+.name{
+    font-size: 18px;
+    margin-right: .4em;
+
+    color: var(--color02);
+}
+.city{
+    margin: 5% 0;
+}
+
+/* Numbers */
+.num-component{
+    display: flex;
+    justify-content: space-around;
+    padding: 6%;
+    border-top: 1px solid lightgray;
+}
+.num-item{
+    text-align: center;
+    width: 22%;
+}
+.num-item p{
+    color: var(--color03);
+    margin-top: 6%;
+    font-size: .8em;
+    letter-spacing: .1em;
+}
+.num{
+    color: #2d3248;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 420px){
+    
+    
+   .component{
+       margin: 10px;
+       width: 250px;
+   }
+   .wrapper{
+       margin: 10px;
+       width: 250px;
+   }
+   .text-component{
+       margin-top: 30%;
+   }
+}
